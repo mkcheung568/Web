@@ -1,0 +1,250 @@
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size:55px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2{
+    font-size:55px;
+    line-height: 54px;
+    text-align: center;
+    color: #222;
+    padding: 30px 30px 30px 30px;
+}
+
+h4{
+    font-size:20px;
+    text-align: center;
+    color: #222;  
+}
+
+h6{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+p{
+    font-size: 18px;
+    margin: 15px 0 20px 0;
+    color: #465b52;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+
+.body{
+    width:100%;
+}
+
+
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 70px;
+    background-color: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position:sticky;
+    top:0;
+    left: 0;
+}
+
+#header .logo{
+    width: 50px;
+    height: 50px;
+}
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    
+}
+
+#navbar li a{ /* navbar  */
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{/* navbar active and hover, change class on different main webpage */
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{ /* navbar active and hover */
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 35%;
+}
+
+
+
+
+#page-header {
+    text-align: center;
+}
+
+#form-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding: 20px;
+}
+
+#product-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Add space between rows */
+    width: 100%;
+    max-width: 500px;
+}
+
+#product-form label {
+    grid-column: 1;
+    text-align: left;
+    padding-right: 10px;
+}
+
+#product-form input {
+    grid-column: 2;
+}
+
+#product-form button {
+    margin-top: 10px;
+}
+
+#product-form input[type="submit"] {
+    
+    margin-top: 10px;
+    position: relative;
+    top:50px;
+}
+
+ #product{
+    overflow-x: auto;
+ }
+
+ #product table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #product table, th, td {
+    
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  #product  th, td {
+    text-align: center;
+    padding: 15px;
+  }
+  
+  #product th {
+    background-color: #f2f2f2;
+  }
+  
+  /* #product tr:nth-child(even) {
+    background-color: #f2f2f2;
+  } */
+  
+  #product button {
+    background-color: #088178;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    margin: 20px;
+    cursor: pointer;
+  }
+  
+  #product button:hover {
+    background-color: #45a049;
+  }
+
+  #product .action-link{
+    background-color: #088178;
+    color: white;
+    border: 1px solid #088178;
+    cursor: pointer;
+    padding: 4px 8px;
+    margin: 2px 0;
+    display: inline-block;
+    text-decoration: none;
+    width: 90px; /* Set a fixed width */
+    line-height: 24px; /* Align text vertically */
+    text-align: center; /* Center text horizontally */
+  }
+  #product .action-link:hover{
+      background-color: #45a049;
+      border: 1px solid #45a049;
+  }
+
+  #product input{
+    font-size: 15px;
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+  }
+
+  #product .selection-type{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
+  
+
