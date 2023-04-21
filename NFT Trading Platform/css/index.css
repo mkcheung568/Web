@@ -1,0 +1,128 @@
+/*format the page title*/
+#title {
+	background: #060c21;
+	position: relative;
+	text-align: center;
+	width: 68%;
+	order: 2;
+	border-radius: 100px;
+	margin: auto;
+}
+
+h1 {
+	color:white;
+}
+
+/*format left and right box color*/
+#title:before {
+	content: '';
+	position: absolute;
+	background: #fff;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	z-index: -1;
+}
+
+#title:after {
+	content: '';
+	position: absolute;
+	background: #fff;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	filter: blur(40px);
+	z-index: -2;
+}
+
+#title:before,
+#title:after {
+	background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+	border-radius: 100px;
+
+}
+
+.info h1 {
+	text-align: center;
+	font-size: 35px
+}
+
+.info img {
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  background-color: #fff;
+}
+
+.info h1 {
+  text-align: center;
+  font-size: 35px
+}
+
+.productTable {
+  width: 100%;
+
+}
+
+.productTable td {
+  text-align: center;
+  width: 50%;
+  height: 100vh;
+  letter-spacing: 2px;
+}
+
+.productTable h3 {
+  text-align: center;
+  font-size: 30px
+}
+
+.productTable td div {
+  text-align: center;
+  margin: 15px;
+  font-size: 20px
+}
+
+@media only screen and (max-width: 800px) {
+
+	#title {
+		background: black;
+	}
+
+	#flex-container {
+		background: black;
+		display: block;
+		flex-flow: ;
+		justify-content: center;
+		margin: 20px 0px;
+	}
+
+	#form {
+		background: black;
+		order: 1;
+		width: 90%;
+		margin: 2px auto;
+	}
+
+	#legal {
+		order: 2;
+		height: auto;
+		background: black;
+		width: 90%;
+		margin: 20px auto;
+	}
+
+	#title {
+		background: #060c21;
+		position: relative;
+		text-align: center;
+		width: 68%;
+		order: 2;
+		border-radius: 100px;
+		margin: auto;
+	}
+
+}

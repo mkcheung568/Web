@@ -1,0 +1,19 @@
+/*format the button*/
+#buy,
+.submit
+{
+  background: none;
+  border: 3px solid;
+  color: lightskyblue;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/*format the button collor*/
+#buy:hover,
+.submit:hover
+{
+  color: red;
+}
